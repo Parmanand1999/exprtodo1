@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    position: relative;
+    margin: 60px;
+}
+.navplush{
+    border: none;
+    background: none;
+}
+.sidebtn{
+    width: 20%;
+    border: none;
+    background: none;
+}
+.work{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.study{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.entertain{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.faimly{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.donetaskside{
+    margin-left: 20px;
+}
+.work{
+    height: 25px;
+  width: 25px;
+  background-color: #9cadb9;
+  border-radius: 50%;
+  display: inline-block;
+}
+.study{
+    height: 25px;
+  width: 25px;
+  background-color: #7abfd4;
+  border-radius: 50%;
+  display: inline-block;
+}
+.entertain{
+    height: 25px;
+  width: 25px;
+  background-color: #f08282;
+  border-radius: 50%;
+  display: inline-block;
+}
+.faimly{
+    height: 25px;
+  width: 25px;
+  background-color: rgb(81, 231, 131);
+  border-radius: 50%;
+  display: inline-block;
+}
+.workspan{
+    margin-left: 50px;
+}
+.studyspan{
+    margin-left: 50px;
+}
+.entertainspan{
+    margin-left: 50px;
+}
+.faimlyspan{
+    margin-left: 50px;
+}
+.form-check-input{
+    margin-left: -7px;
+}
+.maindivtag{
+    display: flex;
+    width: 60%;
+
+}
+.titledesdiv{
+    border: 1px solid gray;
+    margin-right: 10px;
+    height: 50%;
+    background-color: rgb(245, 245, 180);
+}
+.editdeletbtn{
+    border: none;
+    background: none;
+    float:left;
+}
+.editdeletbtn2{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+.titledesdiv1{
+    border: 1px solid gray;
+    background-color: rgb(245, 245, 180);
+    height: 50%;
+}
+.editdeletbtn1{
+    border: none;
+    background: none;
+    float:left;
+}
+.editdeletbtn3{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+.taskdone{
+    display: flex;
+    float: right;
+    margin-right: 10px;
+}
+.taskdone1{
+    display: flex;
+    float: right;
+    margin-right: 10px;
+}
