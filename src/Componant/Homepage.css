@@ -1,10 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.nav{
-    position: relative;
-    margin: 60px;
+
+
+.maindiv{
+padding: 60px;
 }
 .navplush{
     border: none;
@@ -41,6 +38,7 @@
 .work{
     height: 25px;
   width: 25px;
+  margin-right: 5px;
   background-color: #9cadb9;
   border-radius: 50%;
   display: inline-block;
@@ -69,8 +67,8 @@
 .workspan{
     margin-left: 50px;
 }
-.studyspan{
-    margin-left: 50px;
+.studyspan {
+    margin-left: 31px;
 }
 .entertainspan{
     margin-left: 50px;
@@ -87,9 +85,11 @@
 
 }
 .titledesdiv{
-    border: 1px solid gray;
-    margin-right: 10px;
-    height: 50%;
+     /* box-shadow: rgb(224, 224, 172); */
+    border-radius: 10px;
+    margin-right: 10px;  
+    height: 55%;
+    width: 50%;
     background-color: rgb(245, 245, 180);
 }
 .editdeletbtn{
@@ -98,15 +98,18 @@
     float:left;
 }
 .editdeletbtn2{
-    position: absolute;
-    margin-left: 30px;
-    margin-top: -30px;
+    /* position: absolute; */
+  float: left;
+    margin-left: 30px;  
+    /* margin-top: -30px; */
 }
 .titledesdiv1{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    border-radius: 10px;
     background-color: rgb(245, 245, 180);
-    height: 50%;
+    height: 55%;
 }
+
 .editdeletbtn1{
     border: none;
     background: none;
@@ -118,7 +121,7 @@
     margin-top: -30px;
 }
 .taskdone{
-    display: flex;
+    
     float: right;
     margin-right: 10px;
 }
@@ -127,3 +130,44 @@
     float: right;
     margin-right: 10px;
 }
+.work1{
+    height: 25px;
+  width: 25px;
+  /* margin-right: 5px; */
+  background-color: #9cadb9;
+  border-radius: 50%;
+  display: inline-block;
+}
+.study1{
+    height: 25px;
+  width: 25px;
+  background-color: #7abfd4;
+  border-radius: 50%;
+  display: inline-block;
+}
+.entertain1{
+    height: 25px;
+  width: 25px;
+  background-color: #f08282;
+  border-radius: 50%;
+  display: inline-block;
+}
+.faimly1{
+    height: 25px;
+  width: 25px;
+  background-color: rgb(81, 231, 131);
+  border-radius: 50%;
+  display: inline-block;
+}
+.box{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+  @media screen and (max-width: 1118px) {
+    .titledesdiv{
+        border: 1px solid gray;
+        background-color: rgb(245, 245, 180);
+        height: 70%;
+    }
+  }
