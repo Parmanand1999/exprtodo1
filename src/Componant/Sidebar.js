@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Sidebar({ done, donehandler }) {
+function Sidebar({ done1, donehandler }) {
     return (
         <div className='sidebtn d-flex flex-column m-5 '>
             <button className='work'><span className='workspan'>work</span></button>
@@ -10,7 +10,7 @@ function Sidebar({ done, donehandler }) {
 
             <div className='donetaskside mt-3'>
                 <input className="form-check-input" onClick={donehandler} type="checkbox" />
-                {done ? <b>Hide Done Task</b> : <label>Hide Done Task</label>}
+                {done1 ? <b>Hide Done Task</b> : <label>Hide Done Task</label>}
             </div>
         </div>
     )
