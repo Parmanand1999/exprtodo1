@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 function Sidebar({ done1, donehandler }) {
+    // const donetask=useContext(TodoInput)
     return (
         <div className='sidebtn d-flex flex-column m-5 '>
             <button className='work'><span className='workspan'>work</span></button>
@@ -10,7 +11,7 @@ function Sidebar({ done1, donehandler }) {
 
             <div className='donetaskside mt-3'>
                 <input className="form-check-input" onClick={donehandler} type="checkbox" />
-                {done1 ? <b>Hide Done Task</b> : <label>Hide Done Task</label>}
+                {/* {donetask.taskdone ? <b>Hide Done Task</b> : <label>Hide Done Task</label>} */}
             </div>
         </div>
     )

@@ -1,8 +1,10 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
+import { TodoInput } from '../App';
 export const tagpage = createContext();
 
 
-function TagepageForm({ popup1 }) {
+function TagepageForm({ popup1, chield }) {
+    const appContext = useContext(TodoInput)
     const [data, setData] = useState({
         title: "",
         discription: ""
@@ -15,18 +17,19 @@ function TagepageForm({ popup1 }) {
         return stdata;
     }
     // console.log(storedata)
-    function canhandler() {
-        popup1(false)
-    }
+    // function canhandler() {
+    //     popup1(false)
+    // }
     return (
 
         <tagpage.Provider value={storedata}>
+            {chield}
             <div className='transparent'>
                 <div className='maindivtf'>
                     <div className='maindiv2'>
                         <form onSubmit={(e) => (e.preventDefault())}>
                             <div className='navbtn d-flex  justify-content-between'>
-                                <button className='cancelbtn' onClick={canhandler}>Cancel</button>
+                                <button className='cancelbtn' onClick={()=>appContext.dispatch({type: "Cancel"})}>Cancel</button>
                                 <button className='addbtn' onClick={addhandler}>Add</button>
                             </div>
                             <div className="form-group">
@@ -49,12 +52,10 @@ function TagepageForm({ popup1 }) {
                                     className="form-control"
                                     value={data.discription}
                                     onChange={(e) => setData(p => ({
-                                        ...p, discription: e.target.value
-                                    }))}
+                                        ...p, discription: e.target.value}))}
                                     id="exampleFormControlTextarea1"
                                     rows={4}
                                     placeholder="add a description"
-
                                 />
                             </div>
                             <div>

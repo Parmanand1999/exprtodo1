@@ -16,10 +16,12 @@ function TodoBody() {
                     <div className='tagbtn1 d-flex m-2 justify-content-around'>
                         <h6>The first task title</h6>
                         {/* <h6>{item.title}</h6> */}
-                        <button className='editdeletbtn'><h3 className='editdeletbtn2'>...</h3></button>
+                        <button className='editdeletbtn'>
+                            <h3 className='editdeletbtn2'>...</h3>
+                        </button>
                     </div>
                     <div>
-                        <p>lorem vdbfgb dfvfd vdfvdf rwfgtw ghb gewfwe tvfgb fasdc vdgv </p>
+                        <p>lorem vdbfgb dfvfd vdfvdf rwfgtw ghb  </p>
                         {/* <p>{item.discription}</p> */}
                     </div>
                     <div className='d-flex justify-content-between mb-2 '>
