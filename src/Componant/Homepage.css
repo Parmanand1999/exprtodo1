@@ -81,19 +81,15 @@ padding: 60px;
 }
 .maindivtag{
     display: flex;
-    width: 60%;
+    /* margin-top: -25%; */
+    /* margin-left: 28%; */
 }
 .titledesdiv{
-     /* box-shadow: rgb(224, 224, 172); */
     border-radius: 10px;
     margin-right: 10px;  
-    height: 27%;
-    width: 28%;
-    position: absolute;
-
-    margin-top: 5%;
-    margin-left: -6%;
-    z-index: -1;
+   padding: 10px;
+   height: 50%;
+   margin-top: 20%;
     background-color: rgb(245, 245, 180);
 }
 .editdeletbtn{
@@ -167,10 +163,10 @@ padding: 60px;
     display: flex;
     justify-content: space-between;
 }
-  @media screen and (max-width: 1118px) {
+  /* @media screen and (max-width: 1118px) {
     .titledesdiv{
         border: 1px solid gray;
         background-color: rgb(245, 245, 180);
         height: 30%;
     }
-  }
+  } */

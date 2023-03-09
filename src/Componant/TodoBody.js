@@ -1,16 +1,14 @@
 import React, { useContext } from 'react'
-import { tagpage } from './TagepageForm'
+import { TodoInput } from '../App'
 
 function TodoBody() {
-    const name = useContext(tagpage)
-    console.log(name)
-    
-    // console.log(tagpage)
+    const todoBody = useContext(TodoInput)
+
     return (
         <>
             < div className=' maindivtag d-flex ' >
                 {/* {stdata.map((item, index) => { */}
-                <div className='titledesdiv mb-3'
+                <div className='titledesdiv '
                 // key={index}
                 >
                     <div className='tagbtn1 d-flex m-2 justify-content-around'>

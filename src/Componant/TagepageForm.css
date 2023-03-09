@@ -11,7 +11,7 @@
 
 .maindivtf{
     margin: 5% 20%;
-    height: 70vh;
+    height: 76vh;
     width: 60vw;
     border-radius: 5px;
     box-shadow: 0px 0px 6px #888888;
@@ -61,7 +61,7 @@
   width: 25px;
   background-color: rgb(81, 231, 131);
   border-radius: 50%;
-  margin-left: 18%;
+  margin-left: 6%;
   display: inline-block;
 }
 .workspan{

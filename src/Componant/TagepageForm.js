@@ -1,9 +1,6 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { TodoInput } from '../App';
-export const tagpage = createContext();
-
-
-function TagepageForm({ popup1, chield }) {
+function TagepageForm({ popup1 }) {
     const appContext = useContext(TodoInput)
     const [data, setData] = useState({
         title: "",
@@ -16,14 +13,8 @@ function TagepageForm({ popup1, chield }) {
         popup1(false)
         return stdata;
     }
-    // console.log(storedata)
-    // function canhandler() {
-    //     popup1(false)
-    // }
+    
     return (
-
-        <tagpage.Provider value={storedata}>
-            {chield}
             <div className='transparent'>
                 <div className='maindivtf'>
                     <div className='maindiv2'>
@@ -75,8 +66,6 @@ function TagepageForm({ popup1, chield }) {
                     </div>
                 </div>
             </div>
-        </tagpage.Provider>
-
     )
 }
 

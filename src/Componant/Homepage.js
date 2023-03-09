@@ -2,21 +2,14 @@ import React, { useContext } from 'react';
 import { TodoInput } from '../App';
 import Sidebar from './Sidebar'
 import TagepageForm from './TagepageForm'
+import TodoBody from './TodoBody';
 // import TodoBody from './TodoBody'
 
 
 
 function Homepage() {
     const appContext = useContext(TodoInput);
-    // const [done, setdone] = useState(true)
-    // // const [popup, setPopup] = useState(false)
-
-    // function donehandler() {
-    //     // setdone((pre => !pre))
-    // }
-    // function pophandler() {
-    //     // setPopup((pre => !pre))
-    // }
+    
 
     return (
         <>
@@ -34,7 +27,8 @@ function Homepage() {
                         <Sidebar
                             // done1={done} donehandler={donehandler}
                         />
-                            {/* <TodoBody /> */}
+                        {/* <TodoBody /> */}
+                        <TodoBody/>
                         </div>
                     </div>
                 </div>
