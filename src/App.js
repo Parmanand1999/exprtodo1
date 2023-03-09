@@ -5,11 +5,16 @@ import Homepage from './Componant/Homepage';
 import './Componant/Homepage.css'
 import './Componant/TagepageForm.css';
 
+
 export const TodoInput = createContext();
 
 const initialstate = {
   inputOpen: false,
-  donetask: true,
+  taskdone: false,
+  titedescription :{
+    title: "",
+    description:""
+  }
 }
 
 const reducer = (state, action) => {
@@ -25,12 +30,16 @@ const reducer = (state, action) => {
         ...state,
         inputOpen: false
       }
-    case "donetask": {
+    case "taskdone":
       return {
         ...state,
-        // taskdone: true
+        taskdone:!state.taskdone
+        
       }
-    }
+    case " titedescription":
+      return {
+        ...state,
+      }
     default: {
       return state;
     }
@@ -44,6 +53,7 @@ function App() {
     <div>
       <TodoInput.Provider value={{ ...state, dispatch: dispatch }}>
         <Homepage />
+
       </TodoInput.Provider>
 
     </div>
