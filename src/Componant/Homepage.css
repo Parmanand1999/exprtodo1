@@ -163,6 +163,16 @@ padding: 60px;
     display: flex;
     justify-content: space-between;
 }
+.tagbtn1{
+    height: 11vh;
+}
+.edbtn{
+    border: 1px solid gray;
+    padding: 0px;
+    height: 5vh;
+    width: 7vw;
+    margin-right: -70px;
+}
   /* @media screen and (max-width: 1118px) {
     .titledesdiv{
         border: 1px solid gray;
