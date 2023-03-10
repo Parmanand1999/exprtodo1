@@ -1,0 +1,182 @@
+
+
+.maindiv{
+padding: 60px;
+}
+.navplush{
+    border: none;
+    background: none;
+}
+.sidebtn{
+    width: 20%;
+    border: none;
+    background: none;
+}
+.work{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.study{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.entertain{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.faimly{
+    margin: 10px;
+    border: none;
+    background: none;
+}
+.donetaskside{
+    margin-left: 20px;
+}
+.work{
+    height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  background-color: #9cadb9;
+  border-radius: 50%;
+  display: inline-block;
+}
+.study{
+    height: 25px;
+  width: 25px;
+  background-color: #7abfd4;
+  border-radius: 50%;
+  display: inline-block;
+}
+.entertain{
+    height: 25px;
+  width: 25px;
+  background-color: #f08282;
+  border-radius: 50%;
+  display: inline-block;
+}
+.faimly{
+    height: 25px;
+  width: 25px;
+  background-color: rgb(81, 231, 131);
+  border-radius: 50%;
+  display: inline-block;
+}
+.workspan{
+    margin-left: 50px;
+}
+.studyspan {
+    margin-left: 31px;
+}
+.entertainspan{
+    margin-left: 50px;
+}
+.faimlyspan{
+    margin-left: 50px;
+}
+.form-check-input{
+    margin-left: -7px;
+}
+.maindivtag{
+    display: flex;
+    /* margin-top: -25%; */
+    /* margin-left: 28%; */
+}
+.titledesdiv{
+    border-radius: 10px;
+    margin-right: 10px;  
+   padding: 10px;
+   height: 50%;
+   margin-top: 20%;
+    background-color: rgb(245, 245, 180);
+}
+.editdeletbtn{
+    border: none;
+    background: none;
+    float:left;
+}
+.editdeletbtn2{
+  float: left;
+    margin-left: 55px;  
+    margin-top: -15px;
+}
+.titledesdiv1{
+    /* border: 1px solid gray; */
+    border-radius: 10px;
+    background-color: #f5f5b4;
+    height: 55%;
+}
+
+.editdeletbtn1{
+    border: none;
+    background: none;
+    float:left;
+}
+.editdeletbtn3{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+.taskdone{
+    
+    float: right;
+    margin-right: 10px;
+}
+.taskdone1{
+    display: flex;
+    float: right;
+    margin-right: 10px;
+}
+.work1{
+    height: 25px;
+  width: 25px;
+  /* margin-right: 5px; */
+  background-color: #9cadb9;
+  border-radius: 50%;
+  display: inline-block;
+}
+.study1{
+    height: 25px;
+  width: 25px;
+  background-color: #7abfd4;
+  border-radius: 50%;
+  display: inline-block;
+}
+.entertain1{
+    height: 25px;
+  width: 25px;
+  background-color: #f08282;
+  border-radius: 50%;
+  display: inline-block;
+}
+.faimly1{
+    height: 25px;
+  width: 25px;
+  background-color: rgb(81, 231, 131);
+  border-radius: 50%;
+  display: inline-block;
+}
+.box{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.tagbtn1{
+    height: 11vh;
+}
+.edbtn{
+    border: 1px solid gray;
+    padding: 0px;
+    height: 5vh;
+    width: 7vw;
+    margin-right: -70px;
+}
+  /* @media screen and (max-width: 1118px) {
+    .titledesdiv{
+        border: 1px solid gray;
+        background-color: rgb(245, 245, 180);
+        height: 30%;
+    }
+  } */
