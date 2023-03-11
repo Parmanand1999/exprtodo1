@@ -3,10 +3,6 @@ import { TodoInput } from '../App';
 import Sidebar from './Sidebar'
 import TagepageForm from './TagepageForm'
 import TodoBody from './TodoBody';
-// import TodoBody from './TodoBody'
-
-
-
 function Homepage() {
     const appContext = useContext(TodoInput);
     
@@ -14,20 +10,17 @@ function Homepage() {
     return (
         <>
          
-                { appContext.inputOpen ? <TagepageForm/> : ""}
+                { appContext.Homepage ? <TagepageForm/> : ""}
                 <div className='maindiv0'>
                     < div className='maindiv'>
                         <div className='nav d-flex justify-content-between '>
                             <div className='navtodo '><h2>todo</h2></div>
-                        <button className='navplush ' onClick={()=>appContext.dispatch({type: "InputOpen"})}><h2>+</h2></button>
+                        <button className='navplush ' onClick={()=>appContext.dispatch({type: "Homepage"})}><h2>+</h2></button>
                     </div>
                     
 
                         <div className='sidetodo d-flex '>
-                        <Sidebar
-                            // done1={done} donehandler={donehandler}
-                        />
-                        {/* <TodoBody /> */}
+                        <Sidebar/>
                         <TodoBody/>
                         </div>
                     </div>

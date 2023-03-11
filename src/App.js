@@ -11,34 +11,55 @@ export const TodoInput = createContext();
 const initialstate = {
   inputOpen: false,
   taskdone: false,
-  titedescription :{
-    title: "",
-    description:""
-  }
+  title: "",
+  discription: "",
+  titlediscription: [],
+  EDIT_DELETE: false
 }
 
+
 const reducer = (state, action) => {
+  // console.log(action, state)
   switch (action.type) {
-    case "InputOpen":
+    case "Homepage":
       return {
         ...state,
-        inputOpen: true
+        Homepage: true,
+
       }
 
     case "Cancel":
       return {
         ...state,
-        inputOpen: false
+        Homepage: false
       }
     case "taskdone":
       return {
         ...state,
-        taskdone:!state.taskdone
-        
+        taskdone: !state.taskdone
       }
-    case " titedescription":
+    case "Title":
       return {
         ...state,
+        title: action.title
+      }
+    case "Discription":
+      return {
+        ...state,
+        discription: action.discription
+      }
+    case "Addbtn":
+      return {
+        ...state,
+        title: "",
+        discription: "",
+        Homepage: false,
+        titlediscription: [...state.titlediscription, { title: state.title, discription: state.discription }]
+      }
+    case "EDIT_DELETE":
+      return {
+        ...state,
+        EDIT_DELETE: true
       }
     default: {
       return state;
@@ -46,16 +67,14 @@ const reducer = (state, action) => {
 
   }
 }
-
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialstate);
+  const [updatestate, dispatch] = useReducer(reducer, initialstate);
+  // console.log(updatestate)
   return (
     <div>
-      <TodoInput.Provider value={{ ...state, dispatch: dispatch }}>
+      <TodoInput.Provider value={{ ...updatestate, dispatch }}>
         <Homepage />
-
       </TodoInput.Provider>
-
     </div>
   );
 }
