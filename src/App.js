@@ -59,8 +59,15 @@ const reducer = (state, action) => {
     case "EDIT_DELETE":
       return {
         ...state,
-        EDIT_DELETE: true
+        EDIT_DELETE: !state.EDIT_DELETE
       }
+    case "EDIT":
+      console.log(action, "...............................edite")
+      return {
+        ...state,
+        // index:
+      }
+
     default: {
       return state;
     }
