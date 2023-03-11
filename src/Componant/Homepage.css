@@ -1,7 +1,7 @@
 
 
 .maindiv{
-padding: 60px;
+padding: 6%;
 }
 .navplush{
     border: none;
@@ -79,17 +79,17 @@ padding: 60px;
 .form-check-input{
     margin-left: -7px;
 }
-.maindivtag{
-    display: flex;
-    /* margin-top: -25%; */
-    /* margin-left: 28%; */
-}
+/* .maindivtag{
+
+} */
 .titledesdiv{
+   /* display: grid;
+   grid-template-columns: auto auto; */
     border-radius: 10px;
     margin-right: 10px;  
    padding: 10px;
-   height: 50%;
-   margin-top: 20%;
+   height: 45%;  
+   width: 144%;
     background-color: rgb(245, 245, 180);
 }
 .editdeletbtn{
@@ -159,19 +159,24 @@ padding: 60px;
   display: inline-block;
 }
 .box{
-    width: 150px;
+    width: 38%;
     display: flex;
     justify-content: space-between;
 }
 .tagbtn1{
-    height: 11vh;
+    height: 9vh;
+    /* justify-content:space-between; */
+    
 }
+
 .edbtn{
     border: 1px solid gray;
+    border-radius: 11%;
     padding: 0px;
     height: 5vh;
-    width: 7vw;
-    margin-right: -70px;
+    width: 6vw;
+   
+    /* margin-right: -70px; */
 }
   /* @media screen and (max-width: 1118px) {
     .titledesdiv{
