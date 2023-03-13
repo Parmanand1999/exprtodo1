@@ -7,6 +7,7 @@
   height: 100vh;
   background-color: rgba(105, 103, 103, 0.322);
   position: absolute;
+  z-index: 1;
 }
 
 .maindivtf{
@@ -61,7 +62,6 @@
   width: 25px;
   background-color: rgb(81, 231, 131);
   border-radius: 50%;
-  margin-left: 6%;
   display: inline-block;
 }
 .workspan{

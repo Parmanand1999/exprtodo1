@@ -5,11 +5,15 @@ function Sidebar() {
     const donetask1 = useContext(TodoInput)
 
     return (
-        <div className='sidebtn d-flex flex-column m-5 '>
-            <button className='work'><span className='workspan'>work</span></button>
-            <button className='study'><span className='studyspan'>study</span></button>
-            <button className='entertain'><span className='entertainspan'>entertainment</span></button>
-            <button className='faimly'><span className='faimlyspan'>faimly</span></button>
+        <div className=' col my-3 '>
+            <div className='col-sm-3 my-2'><button className='work'><span className='workspan'>work</span></button></div>
+            <div className='col-sm-3 my-2'><button className='study'><span className='studyspan'>study</span></button></div>
+            <div className='col-sm-3 my-2'><button className='entertain'><span className='entertainspan'>entertainment</span></button></div>
+            <div className='col-sm-3 my-2 '><button className='faimly'><span className='faimlyspan'>faimly</span></button></div>
+
+
+
+
 
             <div className='donetaskside mt-3'>
                 <input className="form-check-input" onClick={() => donetask1.dispatch({ type: "taskdone" })} type="checkbox" />
