@@ -14,7 +14,8 @@ const initialstate = {
   title: "",
   discription: "",
   titlediscription: [],
-  EDIT_DELETE: false
+  EDIT_DELETE: false,
+  donetask: false
 }
 
 
@@ -57,17 +58,30 @@ const reducer = (state, action) => {
         titlediscription: [...state.titlediscription, { title: state.title, discription: state.discription }]
       }
     case "EDIT_DELETE":
+      console.log(action, ".............................")
+
       return {
         ...state,
-        EDIT_DELETE: !state.EDIT_DELETE
+        EDIT_DELETE: !state.EDIT_DELETE,
+        activeID: action.i
       }
     case "EDIT":
-      console.log(action, "...............................edite")
+      // console.log(action, "...............................edite")
+      let edit = state.titlediscription;
+      let update = edit.filter((v, id) => id === action.i);
       return {
         ...state,
-        // index:
+        title: update[0].title,
+        discription: update[0].discription,
+        Homepage: true,
       }
-
+    case "donetask":
+      console.log(action, "....................donetask")
+      return {
+        ...state,
+        donetask: !state.donetask,
+        donetaskid: action.i
+      }
     default: {
       return state;
     }
